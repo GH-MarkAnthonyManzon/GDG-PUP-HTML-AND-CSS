@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="CSS3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+    <style>
+        body{
+    font-family: 'Source Sans 3';
+    background-color: #d7d4d49c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-card{
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.cover-photo img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile-content{
+   padding: 0px 20px;
+   position: relative;
+   margin-top: -95px;
+}
+
+.profile-picture{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #71c9ff;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-picture img{
+    width: 100%;
+    height: 100%;
+}
+
+.profile-info h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333333;
+}
+
+.profile-info .title{
+    font-size: 18px;
+    color: #555555;
+    margin: 5px 0;
+}
+
+.profile-info .bio{
+    font-size: 18px;
+    color: #777777;
+}
+
+.social{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 15px;
+}
+
+.social li{
+    display: inline-block;
+}
+
+.social a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.social img{
+    width: 100%;
+    height: 100%;
+}
+    </style>
+<body>
+    
+    <div class="profile-card">
+        <div class="cover-photo">
+            <img src="Blue Gradient Background.jpg" alt="Cover Photo">  
+        </div>
+        <div class="profile-content">
+            <div class="profile-picture">
+                <img src="2x2 ID, MANZON.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-info">
+                <h2>Mark Anthony D. Manzon</h2>
+                <p class="title">Cadet Web Developer</p>
+                <p class="bio">Tech enthusiast focused on programming</p>
+            </div>
+        </div>
+
+        <div class="social">
+            <ul>
+                <li><a href="https://www.facebook.com/markanthony.manzon.96" target="_blank"><img src="facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://discordapp.com/users/886530668409008128" target="_blank"><img src="discord (1).png" alt="Discord"></a></li>
+                <li><a href="https://github.com/GH-MarkAnthonyManzon" target="_blank"><img src="github.png" alt="Github"></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
